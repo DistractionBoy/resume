@@ -1,13 +1,11 @@
 import React, { useState, useEffect } from "react";
 import axios from 'axios';
 import Slider from "react-slick";
-import TrackVisibility from "react-on-screen";
 import Smalltitle from '../components/Smalltitle';
 import FsLightbox from "fslightbox-react";
 import ZoomInIcon from '@material-ui/icons/ZoomIn';
 import Sectiontitle from "../components/Sectiontitle";
 import Layout from "../components/Layout";
-import Progress from "../components/Progress";
 import Resume from "../components/Resume";
 import Service from '../components/Service';
 import Testimonial from '../components/Testimonial';
@@ -20,7 +18,6 @@ const metaData = {
 
 const ResumePage = () => {
   const [toggler, setToggler] = useState(false);
-  const [skills, setSkills] = useState([]);
   const [workingExperience, setWorkingExperience] = useState([]);
   const [educationExperience, setEducationExperience] = useState([]);
   const [information, setInformation] = useState("");
@@ -67,10 +64,6 @@ const ResumePage = () => {
     axios.get('/api/reviews')
       .then(response =>{
         setReviews(response.data)
-      })
-    axios.get('/api/skills')
-      .then(response =>{
-        setSkills(response.data);
       })
     axios.get('/api/experience')
       .then(response =>{
@@ -152,20 +145,6 @@ const ResumePage = () => {
                 <div className="col-lg-4 col-md-6 col-12 mt-30" key={service.title}>
                   <Service content={service}/>
                 </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="mi-skills-area mi-section mi-padding-top">
-        <div className="container">
-          <Sectiontitle title="My Skills" />
-          <div className="mi-skills">
-            <div className="row mt-30-reverse">
-              {skills.map(skill => (
-                <TrackVisibility once className="col-lg-6 mt-30" key={skill.title}>
-                  <Progress title={skill.title} percentage={skill.value} />
-                </TrackVisibility>
               ))}
             </div>
           </div>
