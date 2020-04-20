@@ -11,6 +11,12 @@
 
 # misc
 .DS_Store
+
+# dotenv environment variables file (build for zeit now)
+# found these two on a random site
+.env
+.env.build
+
 .env.local
 .env.development.local
 .env.test.local
