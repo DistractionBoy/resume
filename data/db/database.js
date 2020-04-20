@@ -245,7 +245,7 @@ const database = {
       title: "Story of Our Schools",
       subtitle: "Web Developer",
       imageUrl: "/images/portfolio/story-of-our-schools.jpg",
-      url: 'https://storyofourschools.org'
+      url: 'https://www.storyofourschools.org'
     },
     {
       id: 8,

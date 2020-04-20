@@ -5,7 +5,7 @@ import Layout from '../components/Layout';
 import Socialicons from "../components/Socialicons";
 
 const metaData = {
-    title: `Hello: Jason Pierce`,
+    title: `Hey, I'm Jason Pierce`,
     description: `Welcome to my About site! See my professional resume and browse a couple different projects from the portfolio I have built over the past 10 years or so. Contact me using the handy form, or send me an email directly. Thanks for stopping by - Jason Pierce`,
     keywords: 'Jason Pierce, Cover Letter, Forward'
 };
