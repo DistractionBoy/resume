@@ -29,7 +29,7 @@
     "fslightbox-react": "^1.4.9",
     "imagemin-mozjpeg": "^8.0.0",
     "jquery": "^3.5.0",
-    "next": "^11.1.0",
+    "next": "^12.1.0",
     "next-compose-plugins": "^2.2.0",
     "next-optimized-images": "^2.5.8",
     "node-sass": "^4.13.1",
